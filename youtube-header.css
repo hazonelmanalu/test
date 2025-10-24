@@ -1,0 +1,266 @@
+.youtube-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0px 0px 5px black;
+
+    font-family: Roboto, Arial;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    
+
+    width: 200px;
+}
+
+.hamburger-menu {
+    width: 26px;
+    padding: 22px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: background-color 300ms;
+}
+
+.hamburger-menu:hover {
+    background-color: rgb(239, 239, 239);;
+}
+
+.hamburger-menu:active {
+    background-color: rgb(206, 206, 206);
+}
+
+.youtube-logo {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.youtube-logo-icon {
+    width: 88px;
+}
+
+.search-section {
+    display: flex;
+    min-width: 0px;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+.search-bar {
+    height: 20px;
+    flex: 1;
+
+    
+
+    min-width: 0;
+    max-width: 400px;
+
+    height: 32px;
+    padding: 0 8px;
+
+    border: none;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.search-button {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 32px;
+    background-color: rgb(224, 224, 224);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+
+    flex-shrink: 0;
+
+    transition: background-color 150ms;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -30px;
+
+    font-size: 12px;
+    white-space: nowrap;
+
+    color: white;
+    background-color: rgb(88, 87, 87);
+
+    padding: 4px 6px;
+
+    opacity: 0;
+
+    transition: opacity 150ms;
+}
+
+.search-button:hover .tooltip {
+    opacity: 0.8;
+}
+
+.search-button:hover {
+    background-color: rgb(188, 188, 188);
+}
+
+.search-button:active {
+    background-color: rgb(228, 226, 226);
+}
+
+
+.search-button-icon {
+    margin: 0;
+    height: 28px;
+}
+
+.voice-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-color: rgb(224, 224, 224);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    
+    border-radius: 100px;
+
+    margin-left: 12px;
+
+    flex-shrink: 0;
+}
+
+.voice-search:hover .tooltip {
+    opacity: 0.8;
+}
+
+.voice-search:hover {
+    background-color: rgb(188, 188, 188);
+}
+
+.voice-search:active {
+    background-color: rgb(228, 226, 226);
+}
+
+.voice-search-icon {
+    margin: 0px;
+    width: 24px;
+    height: 24px;
+}
+
+.right-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+    align-items: center;
+    margin-left: 80px;
+
+    min-width: 180px;
+    
+}
+
+.right-section div {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    place-self: center;
+    
+    width: 24px;
+    
+    flex-shrink: 0;
+
+    transition: transform 300ms;
+}
+
+.tooltip2 {
+    position: absolute;
+    bottom: -30px;
+
+    font-size: 12px;
+    white-space: nowrap;
+
+    color: white;
+    background-color: rgb(88, 87, 87);
+
+    padding: 4px 6px;
+
+    opacity: 0;
+
+    transition: opacity 150ms;
+}
+
+.create-content-icon {
+    margin: 0px;
+}
+
+.create-content:hover .tooltip2, .youtube-apps:hover .tooltip2, .notiffication:hover .tooltip2 {
+    opacity: 0.8;
+}
+
+.create-content:hover, .youtube-apps:hover, .notiffication:hover {
+    transform: scale(1.1);
+}
+
+.create-content:active, .youtube-apps:active, .notiffication:active {
+    transform: scale(1.2);
+}
+
+.youtube-apps-icon {
+    margin: 0;
+}
+
+.notiffication {
+    position: relative;
+}
+
+.notif-icon {
+    margin: 0;
+}
+
+.notif-pop-up {
+    display: inline-block;
+    text-align: center;
+
+    position: absolute;
+    top: -4px;
+    left: 12px;
+
+    color: white;
+    background-color: red;
+
+    height: 12;
+    width: 12px;
+
+    padding: 2px 4px;
+
+    border-radius: 12px;
+    border: 2px solid white;
+
+    font-size: 10px;
+}
+
+.user-profile {
+    margin: 10px;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.user-pp {
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    border-radius: 16px;
+}
