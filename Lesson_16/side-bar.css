@@ -1,0 +1,44 @@
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 50;
+    background-color: rgb(255, 255, 255);
+    width: 68px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
+    padding-top: 72px;
+}
+
+.side-bar img {
+    width: 24px;
+}
+
+.side-bar span {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.side-bar div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+
+    width: 68px;
+}
+
+.side-bar div:hover {
+    background-color: rgb(239, 239, 239);;
+}
+
+.side-bar div:active {
+    background-color: rgb(206, 206, 206);
+}
